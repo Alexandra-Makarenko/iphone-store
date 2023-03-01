@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iphone-store/static/css/main.7acaea2f.css",
+    "main.js": "/iphone-store/static/js/main.38ce71f6.js",
+    "index.html": "/iphone-store/index.html",
+    "main.7acaea2f.css.map": "/iphone-store/static/css/main.7acaea2f.css.map",
+    "main.38ce71f6.js.map": "/iphone-store/static/js/main.38ce71f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.38ce71f6.js"
+  ]
+}
