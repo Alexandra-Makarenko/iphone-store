@@ -1,22 +1,26 @@
 import { useSelector } from 'react-redux';
-import {CartItem} from './CartItem'
+import { CartItem } from './CartItem'
+import {
+  List,
+  ListItem
+} from '@chakra-ui/react'
 
 
 export const CartList = () => {
  const cart = useSelector((state) => state.cart.cart)
 
   return (
-    <ul>
+    <List>
       {cart?.map((item,idx )=> (
-        <li key={idx}><CartItem
+        <ListItem key={idx}><CartItem
         key={item.id}
         id={item.id}
         image={item.image}
         title={item.title}
         price={item.price} 
         quantity={item.quantity}
-      /></li>
+      /></ListItem>
       ))}
-    </ul>
+    </List>
   );
 };

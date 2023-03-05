@@ -34,7 +34,7 @@ const ProductsPage = () => {
 
   return (
     <Container>
-      <h2>ProductsPage must be here</h2>
+      <h2>Our Products</h2>
       <ProductsFilter/>
       <ProductsList products={visibleProducts}/>
       

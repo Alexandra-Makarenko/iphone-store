@@ -5,8 +5,7 @@ export const GlobalContainer = styled.div`
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 
   @media ${device.tablet} {
     max-width: 768px;
