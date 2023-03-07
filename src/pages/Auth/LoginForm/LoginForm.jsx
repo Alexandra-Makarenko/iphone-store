@@ -1,13 +1,26 @@
+// import { useDispatch } from 'react-redux';
 import { Container } from '../../../components/Container/Container'; 
-
+import { Form } from '../Form/Form'; 
+// import { setUser } from '../../../redux/auth/authSlice'
+import {getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 
  
 const LoginForm = () => {
+    // const dispatch = useDispatch();
 
+    const handleLogin = (email, password) => {
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, email, password)
+            .then(console.log)
+            .catch(console.error)
+}
 
   return (
     <Container>
-      <h2>LoginForm must be here</h2>
+          <Form
+              title="login"
+              handleClick={handleLogin}
+          />
      
     </Container>
   );

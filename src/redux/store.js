@@ -33,7 +33,7 @@ export const store = configureStore({
       products: productsReducer,
       filters: filtersReducer,
      cart: persistedReducer,
-    //  auth: persistReducer(authPersistConfig, authReducer)
+     auth: persistReducer(authPersistConfig, authReducer)
     },
     middleware: (getDefaultMiddleware) =>
      getDefaultMiddleware({

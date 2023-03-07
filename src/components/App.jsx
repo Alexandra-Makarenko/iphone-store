@@ -1,10 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import { SharedLayout } from './SharedLayout/SharedLayout';
 import { lazy } from 'react';
-import { PrivateRoute } from './PrivateRoute';
+// import { PrivateRoute } from './PrivateRoute';
 // import { RestrictedRoute } from './RestrictedRoute';
-import { refreshUser } from 'redux/auth/operations';
-import { useAuth } from 'hooks';
+// import { refreshUser } from 'redux/auth/operations';
+// import { useAuth } from 'hooks';
+
 
 
 const Home = lazy(() => import('../pages/Home/Home'));

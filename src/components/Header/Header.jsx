@@ -17,10 +17,10 @@ export const Header = () => {
         <StyledLink to="/auth">User</StyledLink>  
         </Flex>
    <Spacer />
-   <ButtonGroup gap='2'>
-    <Button colorScheme='teal'>Sign Up</Button>
-    <Button colorScheme='teal'>Log in</Button>
-   </ButtonGroup>
+   <Flex gap='4'>
+    <StyledLink to="/register">Sign Up</StyledLink>
+    <StyledLink to="/login">Log in</StyledLink>
+   </Flex>
 </Flex>
     </Container>
     </HeaderBox>

@@ -7,6 +7,8 @@ import { store } from './redux/store';
 import { Provider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react'
 import 'modern-normalize';
+import './firebase';
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
