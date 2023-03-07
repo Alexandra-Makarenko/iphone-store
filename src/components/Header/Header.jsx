@@ -1,6 +1,6 @@
 import { Container } from '../Container/Container';
 import { StyledLink, HeaderBox} from './Header.styled';
-import { Flex, Box, Heading, Spacer, ButtonGroup, Button } from '@chakra-ui/react'
+import { Flex, Box, Heading, Spacer} from '@chakra-ui/react'
 
 export const Header = () => {
   return (
