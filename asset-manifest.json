@@ -1,13 +1,29 @@
 {
   "files": {
-    "main.css": "/iphone-store/static/css/main.7acaea2f.css",
-    "main.js": "/iphone-store/static/js/main.38ce71f6.js",
+    "main.css": "/iphone-store/static/css/main.33988b23.css",
+    "main.js": "/iphone-store/static/js/main.0795159b.js",
+    "static/js/544.0cce6668.chunk.js": "/iphone-store/static/js/544.0cce6668.chunk.js",
+    "static/js/62.50781e58.chunk.js": "/iphone-store/static/js/62.50781e58.chunk.js",
+    "static/js/436.d635a097.chunk.js": "/iphone-store/static/js/436.d635a097.chunk.js",
+    "static/js/982.c34fd17c.chunk.js": "/iphone-store/static/js/982.c34fd17c.chunk.js",
+    "static/js/956.9c103887.chunk.js": "/iphone-store/static/js/956.9c103887.chunk.js",
+    "static/js/543.e68d99c6.chunk.js": "/iphone-store/static/js/543.e68d99c6.chunk.js",
+    "static/js/170.b845fe64.chunk.js": "/iphone-store/static/js/170.b845fe64.chunk.js",
+    "static/js/48.7f276243.chunk.js": "/iphone-store/static/js/48.7f276243.chunk.js",
     "index.html": "/iphone-store/index.html",
-    "main.7acaea2f.css.map": "/iphone-store/static/css/main.7acaea2f.css.map",
-    "main.38ce71f6.js.map": "/iphone-store/static/js/main.38ce71f6.js.map"
+    "main.33988b23.css.map": "/iphone-store/static/css/main.33988b23.css.map",
+    "main.0795159b.js.map": "/iphone-store/static/js/main.0795159b.js.map",
+    "544.0cce6668.chunk.js.map": "/iphone-store/static/js/544.0cce6668.chunk.js.map",
+    "62.50781e58.chunk.js.map": "/iphone-store/static/js/62.50781e58.chunk.js.map",
+    "436.d635a097.chunk.js.map": "/iphone-store/static/js/436.d635a097.chunk.js.map",
+    "982.c34fd17c.chunk.js.map": "/iphone-store/static/js/982.c34fd17c.chunk.js.map",
+    "956.9c103887.chunk.js.map": "/iphone-store/static/js/956.9c103887.chunk.js.map",
+    "543.e68d99c6.chunk.js.map": "/iphone-store/static/js/543.e68d99c6.chunk.js.map",
+    "170.b845fe64.chunk.js.map": "/iphone-store/static/js/170.b845fe64.chunk.js.map",
+    "48.7f276243.chunk.js.map": "/iphone-store/static/js/48.7f276243.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.38ce71f6.js"
+    "static/css/main.33988b23.css",
+    "static/js/main.0795159b.js"
   ]
 }
