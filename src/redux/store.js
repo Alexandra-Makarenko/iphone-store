@@ -25,15 +25,14 @@ const persistedReducer = persistReducer(persistConfig, cartReducer);
 const authPersistConfig = {
   key: 'auth',
   storage,
-  whitelist: ['token'],
 };
 
 export const store = configureStore({
    reducer: {
       products: productsReducer,
       filters: filtersReducer,
-     cart: persistedReducer,
-     auth: persistReducer(authPersistConfig, authReducer)
+      cart: persistedReducer,
+      auth: persistReducer(authPersistConfig, authReducer)
     },
     middleware: (getDefaultMiddleware) =>
      getDefaultMiddleware({

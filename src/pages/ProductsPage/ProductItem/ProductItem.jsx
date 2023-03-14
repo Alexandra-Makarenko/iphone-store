@@ -13,7 +13,7 @@ export const ProductsItem = ({item}) => {
   
     return (
       <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-      <Image src='https://bit.ly/2Z4KKcF' alt='Rear view of modern home with pool' />
+      <Image src={item.photoUrl} alt={item.title} />
 
       <Box p='6'>
         <Box display='flex' alignItems='baseline'>

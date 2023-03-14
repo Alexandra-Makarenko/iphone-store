@@ -10,12 +10,12 @@ export const CartList = () => {
  const cart = useSelector((state) => state.cart.cart)
 
   return (
-    <List>
+    <List spacing={3}>
       {cart?.map((item,idx )=> (
         <ListItem key={idx}><CartItem
         key={item.id}
         id={item.id}
-        image={item.image}
+        image={item.photoUrl}
         title={item.title}
         price={item.price} 
         quantity={item.quantity}

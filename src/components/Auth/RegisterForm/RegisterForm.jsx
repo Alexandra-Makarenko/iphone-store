@@ -3,6 +3,8 @@ import { Container } from '../../../components/Container/Container';
 import { Form } from '../Form/Form'; 
 import { setUser } from '../../../redux/auth/authSlice';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { redirect } from "react-router-dom";
+
 
  
 const RegisterForm = () => {
@@ -18,7 +20,8 @@ const RegisterForm = () => {
               token: user.accessToken,
               }))
             })
-            .catch(()=>alert('Invalid data'))
+        .catch((e) => alert(e.message))
+      redirect("/user");
 }
 
   return (

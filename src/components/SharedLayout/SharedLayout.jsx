@@ -2,17 +2,17 @@ import { Header } from '../Header/Header';
 import { Footer } from '../Footer/Footer';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-// import { SharedLayoutBox } from './SharedLayout.styled';
-// import { Loader } from 'components/Loader/Loader';
+import { Spinner } from '@chakra-ui/react'
+import {SharedLayoutBox} from './SharedLayout.styled'
 
 export const SharedLayout = () => {
   return (
-    <div>
+     <SharedLayoutBox>
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner color='teal' />}>
         <Outlet />
       </Suspense>
       <Footer/>
-    </div>
+     </SharedLayoutBox>
   );
 };

@@ -1,9 +1,16 @@
 import { Container } from '../../components/Container/Container'; 
+import { Image } from '@chakra-ui/react'
 
 const UserPage = () => {
   return (
     <Container>
-      <h2>UserPage must be here</h2>
+   <Image
+              borderRadius='full'
+              boxSize='200px'
+              src='https://bit.ly/dan-abramov'
+              alt='Dan Abramov'
+      />
+      
       
     </Container>
   );

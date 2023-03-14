@@ -2,10 +2,13 @@ import { useDispatch } from 'react-redux';
 import { Container } from '../../../components/Container/Container'; 
 import { Form } from '../Form/Form'; 
 import { setUser } from '../../../redux/auth/authSlice'
-import {getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { redirect } from "react-router-dom";
+
+
 
  
-const LoginForm = () => {
+export const LoginForm = () => {
     const dispatch = useDispatch();
 
     const handleLogin = (email, password) => {
@@ -18,7 +21,8 @@ const LoginForm = () => {
               token: user.accessToken,
               }))
             })
-          .catch(()=>alert('Invalid user'))
+        .catch((e) => alert(e.message))
+      redirect("/user");
 }
 
   return (
@@ -32,4 +36,3 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;

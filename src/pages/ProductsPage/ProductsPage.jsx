@@ -4,6 +4,7 @@ import { ProductsFilter } from './ProductsFilter/ProductsFilter';
 import { useSelector } from "react-redux";
 import { getProducts,getProductsFilter } from "redux/selectors";
 import { statusFilters } from "redux/products/constants";
+import {ProductsBox} from './ProductsPage.styled'
 
 
 const getVisibleProducts = (products, statusFilter) => {
@@ -33,12 +34,13 @@ const ProductsPage = () => {
   const visibleProducts = getVisibleProducts(products, statusFilter);
 
   return (
+    <ProductsBox>
     <Container>
-      <h2>Our Products</h2>
       <ProductsFilter/>
       <ProductsList products={visibleProducts}/>
       
-    </Container>
+      </Container>
+      </ProductsBox>
   );
 };
 

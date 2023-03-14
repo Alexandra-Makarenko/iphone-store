@@ -1,19 +1,14 @@
 import { Container } from '../../components/Container/Container'; 
 import { CartList } from './CartList'; 
 import { useSelector } from 'react-redux';
+import {CartBox} from './Cart.styled'
 
  
 const Cart = () => {
 
 const cart = useSelector((state) => state.cart.cart)
 
-const getTotalQuantity = () => {
-  let total = 0
-  cart.forEach(item => {
-    total += item.quantity
-  })
-  return total
-  }
+
   const getTotal = () => {
   let totalQuantity = 0
   let totalPrice = 0
@@ -25,14 +20,14 @@ const getTotalQuantity = () => {
 }
   
   return (
+    <CartBox>
     <Container>
-      <h2>Cart must be here</h2>
-      <p>{getTotalQuantity() || 0}</p>
       <p>total ({getTotal().totalQuantity} items) 
       : <strong>${getTotal().totalPrice}</strong>
       </p>
       <CartList/>
-    </Container>
+      </Container>
+      </CartBox>
   );
 };
 
