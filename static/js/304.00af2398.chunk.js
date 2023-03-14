@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[304],{304:function(e,n,t){t.r(n),t.d(n,{default:function(){return s}});var r,h=t(5107),c=t(168),u=t(7691).ZP.div(r||(r=(0,c.Z)(["\n  min-height: 100vh;\n"]))),i=t(184),s=function(){return(0,i.jsx)(u,{children:(0,i.jsx)(h.W,{children:(0,i.jsx)("h2",{children:"Home must be here"})})})}}}]);
+//# sourceMappingURL=304.00af2398.chunk.js.map
