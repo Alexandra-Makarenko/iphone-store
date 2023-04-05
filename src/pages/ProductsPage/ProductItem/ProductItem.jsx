@@ -2,17 +2,16 @@ import { useDispatch } from 'react-redux';
 import { addToCart } from '../../../redux/cart/cartSlice';
 import { Button, Box, Image, Badge } from '@chakra-ui/react'
 import { useSelector } from 'react-redux';
-
-
-
+import { Link, useLocation } from "react-router-dom";
 
 
 export const ProductsItem = ({item}) => {
   const dispatch = useDispatch()
   const cart = useSelector((state) => state.cart.cart)
+  const location = useLocation();
   
     return (
-      <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+      <Box>
       <Image src={item.photoUrl} alt={item.title} />
 
       <Box p='6'>
@@ -28,8 +27,10 @@ export const ProductsItem = ({item}) => {
           as='h4'
           lineHeight='tight'
           isTruncated
-        >
-         <a href=' '>{item.title}</a> 
+          >
+            <Link  to={`${item.id}`} state={{ from: location }}>
+              {item.title}
+            </Link>
         </Box>
 
         <Box>
@@ -41,6 +42,6 @@ export const ProductsItem = ({item}) => {
             {cart.find(cartItem=>cartItem.id===item.id) && <Badge borderRadius='full' px='2' colorScheme='teal'>In cart</Badge>}
                 </Box>
       </Box>
-    </Box>
+    </Box >
   );
 };

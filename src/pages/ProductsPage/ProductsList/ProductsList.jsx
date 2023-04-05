@@ -1,5 +1,6 @@
 import { ProductsItem } from "../ProductItem/ProductItem";
 
+
 import { SimpleGrid,Box} from '@chakra-ui/react'
 
 export const ProductsList = ({ products }) => {

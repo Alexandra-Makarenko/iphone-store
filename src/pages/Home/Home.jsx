@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <HomeBox>
     <Container>
-      <h2>Home must be here</h2>
+      <h1>Find your phone here</h1>
       
       </Container>
       </HomeBox>
