@@ -2,7 +2,7 @@ import { incrementQuantity, decrementQuantity, removeItem } from '../../redux/ca
 import { useDispatch } from 'react-redux'
 import { Button, HStack, Box,Image,Flex  } from '@chakra-ui/react'
 
-export const CartItem = ({id, image, title, price, quantity=0})=> {
+export const CartItem = ({id, photoUrl, title, price, quantity=0})=> {
   const dispatch = useDispatch()
   
 
@@ -10,7 +10,7 @@ export const CartItem = ({id, image, title, price, quantity=0})=> {
     <HStack spacing='24px'>
      <Box maxW='200px' borderWidth='1px' borderRadius='lg' overflow='hidden'>
 
-      <Image src={image} alt={title} />
+      <Image src={photoUrl} alt={title} />
 </Box>
         <Box>{title}</Box>
         <Box>{price}
