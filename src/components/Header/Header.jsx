@@ -1,6 +1,6 @@
 import { Container } from '../Container/Container';
 import { StyledLink, HeaderBox} from './Header.styled';
-import { Flex, Box, Spacer} from '@chakra-ui/react'
+import { Flex, Box, Spacer, MenuButton,MenuList, Menu,Button ,MenuDivider} from '@chakra-ui/react'
 import { useAuth } from 'hooks';
 import { removeUser } from 'redux/auth/authSlice';
 import { useDispatch   } from 'react-redux';
@@ -21,18 +21,28 @@ export const Header = () => {
         <StyledLink to="/products">Products</StyledLink>
         <StyledLink to="/cart">Cart</StyledLink>
         </Flex>
-   <Spacer />
+        <Spacer />
           {!isAuth ?
             <Flex gap='4'>
             <StyledLink to="/register">Sign Up</StyledLink>
             <StyledLink to="/login">Log in</StyledLink>
             </Flex> :
             <Flex gap='4'>
-              <StyledLink to="/user">{email}</StyledLink>
-              <button onClick={() => dispatch(removeUser())}>Log out</button>
-          </Flex> 
+             
+              <Menu>
+               <MenuButton as={Button} colorScheme='teal'>
+                Profile
+               </MenuButton>
+               <MenuList>
+               <StyledLink to="/user">{email}</StyledLink>
+               <MenuDivider />               
+               <button onClick={() => dispatch(removeUser())}>Log out</button>
+               </MenuList>
+              </Menu>
+              
+            </Flex> 
    }
-</Flex>
+    </Flex>
     </Container>
     </HeaderBox>
   );
