@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../../../redux/cart/cartSlice';
-import { Button, Box, Image, Badge } from '@chakra-ui/react'
+import { addToCart,removeItem } from '../../../redux/cart/cartSlice';
+import { Button, Box, Image, Badge ,ButtonGroup} from '@chakra-ui/react'
 import { useSelector } from 'react-redux';
 import { Link, useLocation } from "react-router-dom";
 
@@ -36,11 +36,13 @@ export const ProductsItem = ({item}) => {
         <Box>
           {item.price} $
                 </Box>
-                <Box>
-                    <Button colorScheme='teal' variant='outline'  
-              onClick={() => dispatch(addToCart(item))}>Add to Cart</Button>             
-            {cart.find(cartItem=>cartItem.id===item.id) && <Badge borderRadius='full' px='2' colorScheme='teal'>In cart</Badge>}
-                </Box>
+                <ButtonGroup gap='2'>
+                    <Button colorScheme='teal' variant='outline' size='sm'  
+                    onClick={() => dispatch(addToCart(item))}>Add to Cart</Button>             
+                     {cart.find(cartItem => cartItem.id === item.id)
+                  && <Button colorScheme='teal' size='sm'
+                    onClick={() => dispatch(removeItem(item.id))}>Delete from Cart</Button> }
+                </ButtonGroup>
       </Box>
     </Box >
   );

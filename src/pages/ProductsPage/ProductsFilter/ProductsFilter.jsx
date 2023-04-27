@@ -16,25 +16,25 @@ export const ProductsFilter = () => {
         selected={filter === statusFilters.sortByPopularDown}
         onClick={() => handleFilterChange(statusFilters.sortByPopularDown)}
       >
-        sortByPopularDown
+        PopularDown
       </Button>
       <Button colorScheme='teal' size='sm'
         selected={filter === statusFilters.sortByPopularUp}
         onClick={() => handleFilterChange(statusFilters.sortByPopularUp)}
       >
-        sortByPopularUp
+       PopularUp
       </Button>
       <Button colorScheme='teal' size='sm'
         selected={filter === statusFilters.sortByPriceDown}
         onClick={() => handleFilterChange(statusFilters.sortByPriceDown)}
       >
-        sortByPriceDown
+        PriceDown
           </Button>
           <Button colorScheme='teal' size='sm'
         selected={filter === statusFilters.sortByPriceUp}
         onClick={() => handleFilterChange(statusFilters.sortByPriceUp)}
       >
-        sortByPriceUp
+       PriceUp
       </Button>
     </Stack>
   );
