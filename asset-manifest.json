@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/iphone-store/static/css/main.33988b23.css",
-    "main.js": "/iphone-store/static/js/main.e862ce03.js",
+    "main.js": "/iphone-store/static/js/main.04aae71e.js",
     "static/js/304.3b0ccda1.chunk.js": "/iphone-store/static/js/304.3b0ccda1.chunk.js",
     "static/js/107.95f258f7.chunk.js": "/iphone-store/static/js/107.95f258f7.chunk.js",
     "static/js/104.34152fda.chunk.js": "/iphone-store/static/js/104.34152fda.chunk.js",
-    "static/js/561.265eeba0.chunk.js": "/iphone-store/static/js/561.265eeba0.chunk.js",
+    "static/js/561.e15a4be3.chunk.js": "/iphone-store/static/js/561.e15a4be3.chunk.js",
     "static/js/982.e5dc9aed.chunk.js": "/iphone-store/static/js/982.e5dc9aed.chunk.js",
     "static/js/968.a23505bb.chunk.js": "/iphone-store/static/js/968.a23505bb.chunk.js",
     "static/js/86.a307604c.chunk.js": "/iphone-store/static/js/86.a307604c.chunk.js",
@@ -14,11 +14,11 @@
     "static/media/bg.jpg": "/iphone-store/static/media/bg.d13cde63637a9ee73693.jpg",
     "index.html": "/iphone-store/index.html",
     "main.33988b23.css.map": "/iphone-store/static/css/main.33988b23.css.map",
-    "main.e862ce03.js.map": "/iphone-store/static/js/main.e862ce03.js.map",
+    "main.04aae71e.js.map": "/iphone-store/static/js/main.04aae71e.js.map",
     "304.3b0ccda1.chunk.js.map": "/iphone-store/static/js/304.3b0ccda1.chunk.js.map",
     "107.95f258f7.chunk.js.map": "/iphone-store/static/js/107.95f258f7.chunk.js.map",
     "104.34152fda.chunk.js.map": "/iphone-store/static/js/104.34152fda.chunk.js.map",
-    "561.265eeba0.chunk.js.map": "/iphone-store/static/js/561.265eeba0.chunk.js.map",
+    "561.e15a4be3.chunk.js.map": "/iphone-store/static/js/561.e15a4be3.chunk.js.map",
     "982.e5dc9aed.chunk.js.map": "/iphone-store/static/js/982.e5dc9aed.chunk.js.map",
     "968.a23505bb.chunk.js.map": "/iphone-store/static/js/968.a23505bb.chunk.js.map",
     "86.a307604c.chunk.js.map": "/iphone-store/static/js/86.a307604c.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.33988b23.css",
-    "static/js/main.e862ce03.js"
+    "static/js/main.04aae71e.js"
   ]
 }
