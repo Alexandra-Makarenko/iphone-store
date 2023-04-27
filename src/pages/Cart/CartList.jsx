@@ -15,7 +15,7 @@ export const CartList = () => {
         <ListItem key={idx}><CartItem
         key={item.id}
         id={item.id}
-        image={item.photoUrl}
+        photoUrl={item.photoUrl}
         title={item.title}
         price={item.price} 
         quantity={item.quantity}
