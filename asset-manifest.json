@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/iphone-store/static/css/main.33988b23.css",
-    "main.js": "/iphone-store/static/js/main.183dab01.js",
+    "main.js": "/iphone-store/static/js/main.a645c435.js",
     "static/js/304.3b0ccda1.chunk.js": "/iphone-store/static/js/304.3b0ccda1.chunk.js",
-    "static/js/107.2542fdaf.chunk.js": "/iphone-store/static/js/107.2542fdaf.chunk.js",
-    "static/js/104.a8a2eb72.chunk.js": "/iphone-store/static/js/104.a8a2eb72.chunk.js",
-    "static/js/561.c8f0ee8c.chunk.js": "/iphone-store/static/js/561.c8f0ee8c.chunk.js",
+    "static/js/482.a0065911.chunk.js": "/iphone-store/static/js/482.a0065911.chunk.js",
+    "static/js/104.7a620c0d.chunk.js": "/iphone-store/static/js/104.7a620c0d.chunk.js",
+    "static/js/561.85160294.chunk.js": "/iphone-store/static/js/561.85160294.chunk.js",
     "static/js/982.e5dc9aed.chunk.js": "/iphone-store/static/js/982.e5dc9aed.chunk.js",
-    "static/js/968.a23505bb.chunk.js": "/iphone-store/static/js/968.a23505bb.chunk.js",
-    "static/js/86.a307604c.chunk.js": "/iphone-store/static/js/86.a307604c.chunk.js",
+    "static/js/968.0d1f833a.chunk.js": "/iphone-store/static/js/968.0d1f833a.chunk.js",
+    "static/js/86.5368d51e.chunk.js": "/iphone-store/static/js/86.5368d51e.chunk.js",
     "static/js/524.5d504cd6.chunk.js": "/iphone-store/static/js/524.5d504cd6.chunk.js",
     "static/media/bg.jpg": "/iphone-store/static/media/bg.d13cde63637a9ee73693.jpg",
     "index.html": "/iphone-store/index.html",
     "main.33988b23.css.map": "/iphone-store/static/css/main.33988b23.css.map",
-    "main.183dab01.js.map": "/iphone-store/static/js/main.183dab01.js.map",
+    "main.a645c435.js.map": "/iphone-store/static/js/main.a645c435.js.map",
     "304.3b0ccda1.chunk.js.map": "/iphone-store/static/js/304.3b0ccda1.chunk.js.map",
-    "107.2542fdaf.chunk.js.map": "/iphone-store/static/js/107.2542fdaf.chunk.js.map",
-    "104.a8a2eb72.chunk.js.map": "/iphone-store/static/js/104.a8a2eb72.chunk.js.map",
-    "561.c8f0ee8c.chunk.js.map": "/iphone-store/static/js/561.c8f0ee8c.chunk.js.map",
+    "482.a0065911.chunk.js.map": "/iphone-store/static/js/482.a0065911.chunk.js.map",
+    "104.7a620c0d.chunk.js.map": "/iphone-store/static/js/104.7a620c0d.chunk.js.map",
+    "561.85160294.chunk.js.map": "/iphone-store/static/js/561.85160294.chunk.js.map",
     "982.e5dc9aed.chunk.js.map": "/iphone-store/static/js/982.e5dc9aed.chunk.js.map",
-    "968.a23505bb.chunk.js.map": "/iphone-store/static/js/968.a23505bb.chunk.js.map",
-    "86.a307604c.chunk.js.map": "/iphone-store/static/js/86.a307604c.chunk.js.map",
+    "968.0d1f833a.chunk.js.map": "/iphone-store/static/js/968.0d1f833a.chunk.js.map",
+    "86.5368d51e.chunk.js.map": "/iphone-store/static/js/86.5368d51e.chunk.js.map",
     "524.5d504cd6.chunk.js.map": "/iphone-store/static/js/524.5d504cd6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33988b23.css",
-    "static/js/main.183dab01.js"
+    "static/js/main.a645c435.js"
   ]
 }
