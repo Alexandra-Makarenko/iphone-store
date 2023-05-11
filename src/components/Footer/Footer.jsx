@@ -1,34 +1,30 @@
 import { Container } from '../Container/Container';
 import { FooterBox } from './Footer.styled'
-import { SimpleGrid, Box,Link } from '@chakra-ui/react'
+import { Flex,Link, Box } from '@chakra-ui/react'
 import { FaInstagram, FaFacebook,FaPhoneAlt,FaMapMarkerAlt } from "react-icons/fa";
 
 export const Footer = () => {
   return (
     <FooterBox>
-      <Container>
-        <SimpleGrid columns={2} spacing={10}>
-          <Box height='80px'>
-            <ul>              
-              <li><Link href=''>
+      <Container centerContent>
+        <Flex  justify='center' gap='8' h='10'>              
+              <Box ><Link href=''>
                 <FaInstagram mx='8px' color='teal'/>
               </Link>
-              </li>
-              <li><Link href=''>
+              </Box>
+              <Box><Link href=''>
                 <FaFacebook mx='8px' color='teal'/>
               </Link>
-              </li>
-              <li><Link href=''>
+              </Box>
+              <Box><Link href=''>
                 <FaPhoneAlt mx='8px' color='teal'/>
               </Link>
-              </li>
-              <li><Link href=''>
+              </Box>
+              <Box><Link href=''>
                 <FaMapMarkerAlt mx='8px' color='teal'/>
               </Link>
-              </li>
-            </ul>
-          </Box>
-        </SimpleGrid>
+              </Box>
+        </Flex>
       </Container>
       </FooterBox>
   );
