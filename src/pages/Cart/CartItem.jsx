@@ -1,6 +1,7 @@
 import { incrementQuantity, decrementQuantity, removeItem } from '../../redux/cart/cartSlice'
 import { useDispatch } from 'react-redux'
-import { Button, SimpleGrid, Box,Image,Flex  } from '@chakra-ui/react'
+import { Button, SimpleGrid, Box, Image, Flex } from '@chakra-ui/react'
+
 
 export const CartItem = ({id, photoUrl, title, price, quantity=0})=> {
   const dispatch = useDispatch()

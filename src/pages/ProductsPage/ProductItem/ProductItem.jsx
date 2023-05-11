@@ -1,8 +1,10 @@
 import { useDispatch } from 'react-redux';
-import { addToCart,removeItem } from '../../../redux/cart/cartSlice';
+import { addToCart,removeItem} from '../../../redux/cart/cartSlice';
 import { Button, Box, Image, Badge ,ButtonGroup} from '@chakra-ui/react'
 import { useSelector } from 'react-redux';
 import { Link, useLocation } from "react-router-dom";
+import { BsFillCartCheckFill,BsCartPlus } from 'react-icons/bs'
+
 
 
 export const ProductsItem = ({item}) => {
@@ -37,11 +39,12 @@ export const ProductsItem = ({item}) => {
           {item.price} $
                 </Box>
                 <ButtonGroup gap='2'>
-                    <Button colorScheme='teal' variant='outline' size='sm'  
-                    onClick={() => dispatch(addToCart(item))}>Add to Cart</Button>             
-                     {cart.find(cartItem => cartItem.id === item.id)
-                  && <Button colorScheme='teal' size='sm'
-                    onClick={() => dispatch(removeItem(item.id))}>Delete from Cart</Button> }
+                               
+                     {cart.find(cartItem => cartItem.id === item.id)?
+                  <Button colorScheme='teal' size='sm'
+                  onClick={() => dispatch(removeItem(item.id))}><BsFillCartCheckFill/></Button> :
+                     <Button colorScheme='teal' variant='outline' size='sm'  
+                    onClick={() => dispatch(addToCart(item))}><BsCartPlus/> </Button>  }
                 </ButtonGroup>
       </Box>
     </Box >
