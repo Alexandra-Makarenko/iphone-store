@@ -5,7 +5,8 @@ const Home = () => {
   return (
     <HomeBox>
     <Container>
-      <h1>Find your phone here</h1>
+        <h1>Find your phone here</h1>
+        
       
       </Container>
       </HomeBox>

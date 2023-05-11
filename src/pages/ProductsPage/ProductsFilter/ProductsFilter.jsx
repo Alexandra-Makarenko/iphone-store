@@ -16,7 +16,7 @@ export const ProductsFilter = () => {
     Sort by
   </MenuButton>
       <MenuList>
-        <MenuOptionGroup defaultValue='sortByPopularDown' title='Order' type='radio'>
+        <MenuOptionGroup defaultValue='sortByPopularDown' type='radio'>
           <MenuItemOption  
             value='sortByPopularDown'
             selected={filter === statusFilters.sortByPopularDown}

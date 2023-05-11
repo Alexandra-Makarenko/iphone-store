@@ -1,17 +1,18 @@
 import { incrementQuantity, decrementQuantity, removeItem } from '../../redux/cart/cartSlice'
 import { useDispatch } from 'react-redux'
-import { Button, HStack, Box,Image,Flex  } from '@chakra-ui/react'
+import { Button, SimpleGrid, Box,Image,Flex  } from '@chakra-ui/react'
 
 export const CartItem = ({id, photoUrl, title, price, quantity=0})=> {
   const dispatch = useDispatch()
   
 
   return (
-    <HStack spacing='24px'>
-     <Box maxW='200px' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+    <SimpleGrid minChildWidth='200px' spacing='24px'>
+     <Box borderWidth='1px' borderRadius='lg' overflow='hidden'>
 
       <Image src={photoUrl} alt={title} />
-</Box>
+      </Box>
+      <Flex gap='2' align={'center'}>
         <Box>{title}</Box>
         <Box>{price}
         </Box>
@@ -24,7 +25,7 @@ export const CartItem = ({id, photoUrl, title, price, quantity=0})=> {
           onClick={() => dispatch(removeItem(id))}>
             Remove
         </Button>
-        
-    </HStack>
+        </Flex>
+    </SimpleGrid>
   )
 }
